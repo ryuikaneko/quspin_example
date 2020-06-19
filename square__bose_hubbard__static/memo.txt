@@ -1,0 +1,16 @@
+https://github.com/weinbe58/QuSpin/blob/master/examples/notebooks/BHM.ipynb
+Coding the Bose-Hubbard Hamiltonian with QuSpin
+
+https://weinbe58.github.io/QuSpin/examples/example7.html#example7-label
+The Bose-Hubbard Model on Translationally Invariant Ladder
+
+https://weinbe58.github.io/QuSpin/user_basis.html
+A tutorial on QuSpin's user_basis
+
+https://weinbe58.github.io/QuSpin/examples/user-basis_example2.html#user-basis-example2-label
+Bose-Hubbard model in 1d
+# https://weinbe58.github.io/QuSpin/downloads/567d8096559c83a92c52a580c93935c1/user_basis_trivial-boson.py
+
+http://weinbe58.github.io/QuSpin/generated/quspin.basis.boson_basis_general.html#quspin.basis.boson_basis_general
+quspin.basis.boson_basis_general
+# example: two-dimensional Bose-Hubbard model
