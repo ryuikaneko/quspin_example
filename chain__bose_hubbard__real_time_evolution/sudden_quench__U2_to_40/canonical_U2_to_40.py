@@ -2,7 +2,7 @@
 ## https://weinbe58.github.io/QuSpin/downloads/567d8096559c83a92c52a580c93935c1/user_basis_trivial-boson.py
 ## http://weinbe58.github.io/QuSpin/generated/quspin.operators.hamiltonian.html
 
-## http://dx.doi.org/10.1155/2013/393616
+## https://doi.org/10.1103/PhysRevLett.98.180601
 
 from __future__ import print_function, division
 from quspin.operators import hamiltonian # Hamiltonians and operators
