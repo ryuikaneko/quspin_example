@@ -5,6 +5,7 @@ from __future__ import print_function, division
 from quspin.operators import quantum_LinearOperator # Hamiltonians and operators
 from quspin.basis import spin_basis_general # spin basis constructor
 import numpy as np # general math functions
+import scipy.sparse.linalg
 #
 ###### define model parameters ######
 J = 1.0 # spin-spin interaction
@@ -42,5 +43,7 @@ H = quantum_LinearOperator(static,basis=basis_2d,dtype=np.float64,**no_checks)
 # diagonalise H
 #ene,vec = H.eigsh(time=0.0,which="SA",k=2)
 #ene,vec = H.eigsh(which="SA",k=2)
-ene = H.eigsh(which="SA",k=2,return_eigenvectors=False); ene = np.sort(ene)
+#ene = H.eigsh(which="SA",k=2,return_eigenvectors=False); ene = np.sort(ene)
+## https://weinbe58.github.io/QuSpin/parallelization.html#parallel-support-in-the-operator-module-hamiltonian-quantum-operator-and-quantum-linearoperator
+ene = scipy.sparse.linalg.eigsh(H,which="SA",k=2,return_eigenvectors=False); ene = np.sort(ene)
 print(J,ene[0]/N_2d,ene[1]/N_2d)
