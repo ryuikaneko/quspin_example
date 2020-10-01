@@ -4,5 +4,5 @@ set xrange [0:2]
 set yrange [-0.5:4.5]
 set xlabel "Omega/V"
 set ylabel "Delta/V"
-set cbrange [-0.5:0.3]
+set cbrange [-0.25:0]
 p "dat" u 2:3:13 w imag ti ""

@@ -75,7 +75,7 @@ def main():
     Deltas = np.linspace(-0.5,4.5,npointsD) # detuning
     V = 1.0 # van der Waals
 #
-    print("#V,Omega,Delta,J,Hz,Hx,Lx,Ly,ene[0]/N_2d+eshift,mx,mz,mz0mz1,mz0mz1-mz**2,mz0mzsq2,mz0mzsq2-mz**2")
+    print("#V,Omega,Delta,J,Hz,Hx,Lx,Ly,ene[0]/N_2d+eshift,mx,mz,mz0mz1/2,mz0mz1/2-mz**2,mz0mzsq2/2,mz0mzsq2/2-mz**2")
     for Omega in Omegas:
         for Delta in Deltas:
             Hx = - Omega # transverse field
@@ -83,7 +83,7 @@ def main():
             J = V # AF Ising
             eshift = 0.25*V*Dim - 0.5*Delta
             ene, mx, mz, mz0mz1, mz0mzsq2 = exact_diag(J,Hx,Hz,Lx,Ly)
-            print(V,Omega,Delta,J,Hz,Hx,Lx,Ly,ene[0]/N_2d+eshift,mx,mz,mz0mz1,mz0mz1-mz**2,mz0mzsq2,mz0mzsq2-mz**2)
+            print(V,Omega,Delta,J,Hz,Hx,Lx,Ly,ene[0]/N_2d+eshift,mx,mz,mz0mz1/2,mz0mz1/2-mz**2,mz0mzsq2/2,mz0mzsq2/2-mz**2)
         print()
 
 if __name__ == "__main__":
